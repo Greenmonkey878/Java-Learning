@@ -29,8 +29,19 @@ public class Hello{
         }
 
         boolean isCar = false;
-        if (isCar == true){
+        if (!isCar){
             System.out.println("This is not supposed to happen");
         }
+
+        String makeOfCar = "Volkswagen";
+        boolean isDomestic = makeOfCar == "Volkswagen" ? false : true;
+
+        if (isDomestic){
+            System.out.println("This car is domestic to out country");
+        }
+        
+        String s = (isDomestic) ? "This car is domestic" : "This car is not domestic";
+
+        System.out.println(s);
     }
 }
